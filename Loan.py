@@ -21,7 +21,7 @@ if page == "Home":
    st.markdown(page_bg, unsafe_allow_html=True)
    st.markdown("<h1 style='text-align:center;'>YR bank pvt.ltd</h1>", unsafe_allow_html=True)
    st.caption("<h2 style='text-align:center;'> Your satisfaction is our service </h2>",unsafe_allow_html=True)
-   st.logo(log.jpg)
+   st.logo("log.jpg")
    st.set_page_config(layout='centered')
    col1, col2, col3 = st.columns([1,1,1.05])
    with col2:
@@ -396,6 +396,7 @@ elif page == "Contact":
     st.write("☎️ Landline : 044-123456")
     st.write("📧 Email-id : babumani429@gmail.com")
     st.write("🌐 website : www.yrbankpvtltd.com")
+
 
 
 

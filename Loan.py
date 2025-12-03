@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import joblib
 
-st.sidebar.image(log.jpg,width=150)
+st.sidebar.image("log.jpg",width=150)
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to",["Home","About","Types","Rules and Regulations for Customers","Prediction","Contact"])
 st.sidebar.write("Your satisfaction is our service.")
@@ -396,6 +396,7 @@ elif page == "Contact":
     st.write("☎️ Landline : 044-123456")
     st.write("📧 Email-id : babumani429@gmail.com")
     st.write("🌐 website : www.yrbankpvtltd.com")
+
 
 
 

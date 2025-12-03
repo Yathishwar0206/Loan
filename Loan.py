@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import joblib
 
-st.sidebar.image(r"C:\Users\ADMIN\Desktop\Jupyter folder\Projects\ML\images\log.jpg",width=150)
+st.sidebar.image(log.jpg,width=150)
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to",["Home","About","Types","Rules and Regulations for Customers","Prediction","Contact"])
 st.sidebar.write("Your satisfaction is our service.")
@@ -21,12 +21,12 @@ if page == "Home":
    st.markdown(page_bg, unsafe_allow_html=True)
    st.markdown("<h1 style='text-align:center;'>YR bank pvt.ltd</h1>", unsafe_allow_html=True)
    st.caption("<h2 style='text-align:center;'> Your satisfaction is our service </h2>",unsafe_allow_html=True)
-   st.logo(r"C:\Users\ADMIN\Desktop\Jupyter folder\Projects\ML\images\log.jpg",icon_image=r"C:\Users\ADMIN\Desktop\Jupyter folder\Projects\ML\images\log.jpg")
+   st.logo(log.jpg)
    st.set_page_config(layout='centered')
    col1, col2, col3 = st.columns([1,1,1.05])
    with col2:
-       st.logo(r"C:\Users\ADMIN\Desktop\Jupyter folder\Projects\ML\images\log.jpg")
-       st.image(r"C:\Users\ADMIN\Desktop\Jupyter folder\Projects\ML\images\log.jpg",width=200)
+       st.logo(log.jpg)
+       st.image(log.jpg,width=200)
  
 # About us
 
@@ -159,7 +159,7 @@ elif page == "Types":
              """)
     
     st.header("Vehicle Loans")
-    st.image(r"C:\Users\ADMIN\Desktop\Jupyter folder\Projects\ML\images\vehical.jpg",width=800)
+    st.image(vehical.jpg,width=800)
     st.write("""
              A vehicle loan, also known as an auto loan, is a type of secured installment loan used to finance the purchase of a new or used vehicle. The vehicle itself serves as collateral, which means the lender can repossess it if the borrower fails to make payments. 
              How Vehicle Loans Work
@@ -193,7 +193,7 @@ elif page == "Types":
              """)
     
     st.header("Education Loans")
-    st.image(r"C:\Users\ADMIN\Desktop\Jupyter folder\Projects\ML\images\education.png",width=800)
+    st.image(education.png,width=800)
     st.write("""
              An education loan is a sum of money borrowed to finance higher education and related expenses such as tuition, books, living costs, and travel. In India, students can access loans through government schemes (like PM-Vidyalaxmi) and private lenders, with varying interest rates, loan limits, and repayment terms. 
              
@@ -226,7 +226,7 @@ elif page == "Types":
              Sanction and direct disbursement of the loan amount to the institution. 
              """)
     st.header("Medical Loans")
-    st.image(r"C:\Users\ADMIN\Desktop\Jupyter folder\Projects\ML\images\medical.jpg",width=800)
+    st.image(medical.jpg,width=800)
     st.write("""
              A medical loan is a type of personal loan used to cover healthcare expenses, whether for an unexpected medical emergency or a planned treatment. These are typically unsecured loans, meaning they do not require collateral, and are offered by various financial institutions. 
              
@@ -253,7 +253,7 @@ elif page == "Types":
              """)
     
     st.header("Agricultural Loans")
-    st.image(r"C:\Users\ADMIN\Desktop\Jupyter folder\Projects\ML\images\agri-loans.png",width=800)
+    st.image(agri-loans.png,width=800)
     st.write("""
              Agriculture loans are financial programs that provide accessible and affordable credit to farmers for a wide range of farming and allied activities. These loans, offered by banks and government institutions (often with subsidies), support essential expenses like purchasing seeds, equipment, and livestock, and funding land development or infrastructure. 
              
@@ -285,7 +285,7 @@ elif page == "Types":
              """)
     
     st.header("Gold Loans")
-    st.image(r"C:\Users\ADMIN\Desktop\Jupyter folder\Projects\ML\images\gold.webp",width=800)
+    st.image(gold.webp,width=800)
     st.write("""
              A gold loan is a secured loan that allows a borrower to obtain funds by pledging gold ornaments or jewellery as collateral. This type of loan is popular for its quick processing, minimal documentation requirements, and lower interest rates compared to unsecured personal loans, as the gold itself acts as security. 
              
@@ -396,4 +396,5 @@ elif page == "Contact":
     st.write("☎️ Landline : 044-123456")
     st.write("📧 Email-id : babumani429@gmail.com")
     st.write("🌐 website : www.yrbankpvtltd.com")
+
 
